@@ -3,11 +3,11 @@
 This project is a simple task management system built in Prolog. 
 
 ## Authors
-- Kamleya Geuttai
 - Feriel Medjrab
+- Kamleya Geuttai
 
 ## Description
-The system allows users to create tasks, assign them to users, mark them as completed, and display various task-related information.
+The system allows users to create tasks, assign them to users, mark them as completed, and display various task related information.
 
 ## Features
 - Create tasks
