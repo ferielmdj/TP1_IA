@@ -1,20 +1,18 @@
-% we need to define a dynamic predicate to store tasks in
+
 :- dynamic task/4.
 
-/* Each task has a TaskID, Description, Assignee (user), and whether
-   it's completed or not */
 
 % Create a task
 create_task(TaskID, Description, Assignee) :-
-    \+ task(TaskID, _, _, _),           % Ensure task ID doesn’t already exist(unique)
-    assert(task(TaskID, Description, Assignee, false)), % Add task with completion status false
+    \+ task(TaskID, _, _, _),          
+    assert(task(TaskID, Description, Assignee, false)), 
     write('Task created successfully.'), nl.
 
 % Mark task as completed
 mark_completed(TaskID) :-
     task(TaskID, Description, Assignee, _),
-    retract(task(TaskID, Description, Assignee, _)),   % Remove old version
-    assert(task(TaskID, Description, Assignee, true)), % Update status to true
+    retract(task(TaskID, Description, Assignee, _)),  
+    assert(task(TaskID, Description, Assignee, true)), 
     write('Task marked as completed.'), nl.
 
 % Display all tasks
