@@ -4,7 +4,7 @@ This project is a simple task management system built in Prolog.
 
 ## Authors
 - Feriel Medjrab
-- Kamiliya Guettai
+- Kamilya Guettai
 
 ## Description
 The system allows users to create tasks, assign them to users, mark them as completed, and display various task related information.
